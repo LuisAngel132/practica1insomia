@@ -1,0 +1,49 @@
+consultaporcomentariosporproducto
+
+curl --request GET \
+  --url http://localhost:8000/api/productos/1/vcomentariospr
+-----------------------------------------
+CONSULTACOMENTARIOSPORPERSONA
+curl --request GET \
+  --url http://localhost:8000/api/personas/1/vcomentariosp \
+  --header 'content-type: application/json'
+-----------------------------------------
+INSERTAR COMENTARIOS
+curl --request POST \
+  --url http://localhost:8000/api/comentarios \
+  --header 'content-type: application/json' \
+  --data '{
+"producto":"1",
+"comentario":"delicioso",
+"persona":"1"
+}'
+-----------------------------------------
+VER COMENTARIOS
+curl --request GET \
+  --url http://localhost:8000/api/vcomentarios
+-----------------------------------------
+INSERTAR PRODUCTOS
+curl --request POST \
+  --url http://localhost:8000/api/producto \
+  --header 'content-type: application/json' \
+  --data '{
+	"producto":"coca"
+}'
+-----------------------------------------
+VER PRODUCTOS
+curl --request GET \
+  --url http://localhost:8000/api/vproducto \
+  --header 'content-type: application/json'
+-----------------------------------------
+VER PERSONAS
+curl --request GET \
+  --url http://localhost:8000/api/vpersona
+-----------------------------------------
+INSERTAR PERSONAS
+
+curl --request POST \
+  --url http://localhost:8000/api/persona \
+  --header 'content-type: application/json' \
+  --data '{
+	"nombre":"luis"
+}'
