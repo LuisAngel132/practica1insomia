@@ -7,6 +7,14 @@ http://localhost:8000/api/vprcomentario
 ELIMINAR COMENTARIOS DEL PRODUCTO
 http://localhost:8000/api/ecomentario/1
 --------------------------------------
+INSERTAR COMENTARIOS
+http://localhost:8000/api/comentarios
+{
+"producto":"2",
+"comentario":"delicioso",
+"persona":"2"
+}
+--------------------------------------
 ACTUALIZAR PRODUCTOS
 http://localhost:8000/api/aproducto/2
 {
