@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Schema;
     public function up()
     {
         Schema::create('personas', function (Blueprint $table) {
-            $table->id('idpersona');
+            $table->bigIncrements('id');
             $table->string('nombre',50);
 
             $table->timestamps();
