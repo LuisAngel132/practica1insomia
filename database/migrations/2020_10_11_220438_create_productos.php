@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -15,7 +16,7 @@ public function up()
 {
    
     Schema::create('productos', function (Blueprint $table) {
-        $table->bigIncrements('idproducto');
+        $table->bigIncrements('id');
         $table->string('nombre_del_producto',50);
         $table->timestamps();
      
